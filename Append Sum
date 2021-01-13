@@ -1,0 +1,9 @@
+# Create a function that calculates the sum of the last two elements of a list and appends it to the end. 
+# After doing so, it will repeat this process two more times and return the resulting list.
+
+def append_sum(lst):
+  lst.append(lst[-2] + lst[-1])
+  lst.append(lst[-2] + lst[-1])
+  lst.append(lst[-2] + lst[-1])
+  return lst
+print(append_sum([1, 1, 2]))
