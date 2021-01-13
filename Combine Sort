@@ -1,0 +1,8 @@
+# Create a function that combines two different lists together and then sorts them. 
+# To do this we can combine the lists with an operation and then sort using a function call.
+
+def combine_sort(lst1, lst2):
+  unsorted = lst1 + lst2
+  sorted_list = sorted(unsorted)
+  return sorted_list
+print(combine_sort([4, 10, 2, 5], [-10, 2, 5, 10]))
